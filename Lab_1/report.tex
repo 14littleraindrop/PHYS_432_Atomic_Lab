@@ -1,5 +1,8 @@
 \documentclass[12pt]{article}
 
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{graphicx}
 \usepackage[english]{babel}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -13,9 +16,6 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
-\usepackage{geometry}
-\geometry{margin=1in}
-\usepackage{graphicx}
 \graphicspath{ {./images/} }
 
 
@@ -43,32 +43,37 @@ Since $M_H/m$ and $\lambda_H$ is known and we can measure $\Delta \lambda_{HD}$,
 \textbf{2. \textit{Result for the mass ratio}}
 \smallskip
 
-The data plot for $\Delta \lambda_{HD}$ with respect to hydrogen wavelength is shown below (note that the fitted line is included also)
+The data plot for $\Delta \lambda_{HD}$ with respect to hydrogen wavelength is shown below (note that the fitted line is included also). 
 \smallskip
 
-\includegraphics[width=10cm]{wavelength_difference}
+\begin{center}
+\includegraphics[width=16cm]{wavelength_difference}
+\end{center}
 \smallskip
 
-The fitted line gives a slop of $0.000257 \pm 0.000009$. Using the equation given above, the mass ratio is: $$\frac{M_H}{M_D} = 0.50 \pm 0.02$$
-The accepted value of hydrogen-deuterium mass ration is $M_H/M_D = 0.500248$, which is only about $0.0002$ off from our measured value, so lies within the uncertainty ($0.02$). This concluded that our measured value agree very well with the accepted value.
+The analysis is mainly done using python. The raw data was first smoothed using a \textit{scipy.ndimage} function called  \textit{gaussian$\_$filter1d()}. Then, by manually locating the peak and selecting proper peak width, the centroid of each peak is calculated, which then is used to calculate the peak separation (and hence the wavelength separation) shown in the plot above. The uncertainty is taken to be the absolute difference between the observed peak maximum and the calculated centroid. Finally, the data points are fitted using the python library \textit{lmfit.models}.
+\smallskip
+
+The fitted line gives a slop of $0.000257 \pm 0.000009$. Using the equation given above, the mass ratio is: $$\frac{M_H}{M_D} = 0.4957 \pm 0.0153$$
+The accepted value of hydrogen-deuterium mass ration is $M_H/M_D = 0.500248$, which is only about $0.0045$ off from our measured value, so lies within the uncertainty ($0.0153$). This concluded that our measured value agree very well with the accepted value.
 \bigskip
 
 \textbf{3. \textit{Possible error}}
 \smallskip
 
-Assume we made a mistake in measurements by pausing the wavelength scanning for 2 seconds between two sodium D lines, how would it effects our mass ratio final result?
+Assuming we made a mistake in measurements by pausing the wavelength scanning for 2 seconds between two sodium D lines, we want to know how would this affects our final result of the mass ratio.
 \smallskip
 
 First, we consider how this mistake will effect the scaling factor $K_{Na} = \frac{\Delta \lambda_{D}}{\Delta t_D}$. Since the time interval between sodium peaks is lengthened by our mistake
 $$K_{Na} = \frac{\Delta \lambda_{D}}{\Delta t_D} \rightarrow \frac{\Delta \lambda_{D}}{\Delta t_D + 2s}$$
 The scaling factor will become smaller, namely, it is scaled by $\frac{\Delta t_D}{\Delta t +2s} = 0.94026 \pm 0.00004$ (with $\Delta t_D = 31.476s \pm 0.025$ from our analysis).
 
-Since we calculate $\Delta \lambda_{HD}$ values using $ K_{Na}$ as follow
-$$ \Delta \lambda_{HD} = K_{Na} \Delta t_{HD}$$
-the new $\Delta \lambda_{HD}$ will also be scaled by the same amount (i.e $\Delta \lambda_{HD} \rightarrow 0.94026 \Delta \lambda_{HD}$). So the slope ($\frac{\Delta \lambda_{HD}}{\lambda_H}$) will also decrease by a factor of $0.94026$. Solving for the mass ratio in the equation on the first page, with the known value $M_H / m = 1836.15$, we get 
-$$\frac{M_H}{M_D} = 1- 1837.15 \times \frac{\Delta \lambda_{HD}}{\lambda_H}$$
-this means that a 0.94026 decrease in slope will result in a new mass ratio of $0.525 \pm 0.015$ (original slope is $0.000275 \pm 0.000009$, detailed calculation is done in the analysis notebook). So, by taking the ratio of the "correct mass ratio" and the "incorrect mass ratio" 
-$$\frac{(M_H/M_D)_{incorrect}}{(M_H/M_D)_{correct}} = \frac{0.525 \pm 0.015}{0.50 \pm 0.02} = 1.05 \pm 0.0516$$
-So the mistake we made causes us to measure a mass ratio that is $105 \%$ of the mass ratio without making the mistake.  
+Since $\Delta \lambda_{HD} = K_{Na} \Delta t_{HD}$, the new $\Delta \lambda_{HD}$ will also be scaled by the same amount. 
+
+Recall that the mass ratio was calculated using the relation
+$$ \frac{\Delta \lambda_{HD}}{\lambda_H} = \frac{1- M_H/M_D}{1+M_H/m_e}$$
+so with this new scaled $\Delta \lambda_{HD}$, the new mass ratio was found to be $0.525 \pm 0.015$. Which gives a fractional increase, comparing to the values without this measurement error, of 
+$$\frac{(M_H/M_D)_{incorrect}}{(M_H/M_D)_{correct}} = \frac{0.525 \pm 0.015}{0.4957 \pm 0.0153} = 1.05911 \pm 0.04461$$
+So the mistake we made causes us to measure a mass ratio that is about $105 \%$ of the mass ratio without making the mistake.
 
 \end{document}
