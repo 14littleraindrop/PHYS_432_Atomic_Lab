@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.7)  11 MAY 2021 01:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.7)  25 MAY 2021 05:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -9,8 +9,8 @@ LaTeX2e <2018-04-01> patch level 2
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count80
 \c@section=\count81
@@ -223,25 +223,90 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@postskip=\skip62
 \thm@headsep=\skip63
 \dth@everypar=\toks30
-) (./report.aux
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count111
+\float@exts=\toks31
+\float@box=\box34
+\@float@everytoks=\toks32
+\@floatcapt=\box35
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen127
+\captionmargin@=\dimen128
+\captionwidth=\dimen129
+\caption@tempdima=\dimen130
+\caption@indent=\dimen131
+\caption@parindent=\dimen132
+\caption@hangindent=\dimen133
+)
+\c@ContinuedFloat=\count112
+Package caption Info: float package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/sidecap/sidecap.sty
+Package: sidecap 2003/06/06 v1.6f SideCap Package (RN/HjG)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\SC@BOXWD=\dimen134
+\SC@CAPWD=\dimen135
+\SC@tempdima=\dimen136
+\SC@tempdimb=\dimen137
+\c@SC@C=\count113
+\SC@BOX=\box36
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip64
+\multirow@cntb=\count114
+\multirow@dima=\skip65
+\bigstrutjot=\dimen138
+)
+(./report.aux
+
+LaTeX Warning: Label `eqn:einstein' multiply defined.
+
+
+LaTeX Warning: Label `eqn:einstein' multiply defined.
+
+
+LaTeX Warning: Label `eqn:einstein' multiply defined.
+
+
+LaTeX Warning: Label `eqn:einstein' multiply defined.
+
+
+LaTeX Warning: Label `eqn:einstein' multiply defined.
+
 
 LaTeX Warning: Label `eqn:einstein' multiply defined.
 
 )
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -262,12 +327,12 @@ LaTeX Font Info:    ... okay on input line 24.
 * \topmargin=-37.0pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=12.0pt
+* \topskip=11.0pt
 * \footskip=30.0pt
-* \marginparwidth=44.0pt
+* \marginparwidth=59.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -279,17 +344,17 @@ LaTeX Font Info:    ... okay on input line 24.
 
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count111
-\scratchdimen=\dimen127
-\scratchbox=\box34
-\nofMPsegments=\count112
-\nofMParguments=\count113
-\everyMPshowfont=\toks31
-\MPscratchCnt=\count114
-\MPscratchDim=\dimen128
-\MPnumerator=\count115
-\makeMPintoPDFobject=\count116
-\everyMPtoPDFconversion=\toks32
+\scratchcounter=\count115
+\scratchdimen=\dimen139
+\scratchbox=\box37
+\nofMPsegments=\count116
+\nofMParguments=\count117
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count118
+\MPscratchDim=\dimen140
+\MPnumerator=\count119
+\makeMPintoPDFobject=\count120
+\everyMPtoPDFconversion=\toks34
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -342,70 +407,101 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 34.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: sidecap package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/ms/ragged2e.sty
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+
+ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 126.
+)
+\CenteringLeftskip=\skip66
+\RaggedLeftLeftskip=\skip67
+\RaggedRightLeftskip=\skip68
+\CenteringRightskip=\skip69
+\RaggedLeftRightskip=\skip70
+\RaggedRightRightskip=\skip71
+\CenteringParfillskip=\skip72
+\RaggedLeftParfillskip=\skip73
+\RaggedRightParfillskip=\skip74
+\JustifyingParfillskip=\skip75
+\CenteringParindent=\skip76
+\RaggedLeftParindent=\skip77
+\RaggedRightParindent=\skip78
+\JustifyingParindent=\skip79
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 36.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 34.
+LaTeX Font Info:    Try loading font information for U+msb on input line 36.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
+ Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-<./images/1st.png, id=14, 1323.94624pt x 711.65875pt>
-File: ./images/1st.png Graphic file (type png)
-<use ./images/1st.png>
-Package pdftex.def Info: ./images/1st.png  used on input line 60.
-(pdftex.def)             Requested size: 256.0748pt x 137.63812pt.
-<./images/2nd.png, id=16, 1324.95pt x 708.6475pt>
-File: ./images/2nd.png Graphic file (type png)
-<use ./images/2nd.png>
-Package pdftex.def Info: ./images/2nd.png  used on input line 62.
-(pdftex.def)             Requested size: 256.0748pt x 136.95842pt.
-<./images/3rd.png, id=17, 1325.95375pt x 714.67pt>
-File: ./images/3rd.png Graphic file (type png)
-<use ./images/3rd.png>
-Package pdftex.def Info: ./images/3rd.png  used on input line 63.
-(pdftex.def)             Requested size: 256.0748pt x 138.01332pt.
+<./images/546nm.jpg, id=14, 1700.3525pt x 1615.03375pt>
+File: ./images/546nm.jpg Graphic file (type jpg)
+<use ./images/546nm.jpg>
+Package pdftex.def Info: ./images/546nm.jpg  used on input line 90.
+(pdftex.def)             Requested size: 150.79968pt x 143.22743pt.
+<./images/577nm.jpg, id=15, 1618.045pt x 1389.19pt>
+File: ./images/577nm.jpg Graphic file (type jpg)
+<use ./images/577nm.jpg>
+Package pdftex.def Info: ./images/577nm.jpg  used on input line 91.
+(pdftex.def)             Requested size: 150.79968pt x 129.45193pt.
+<./images/579nm.jpg, id=16, 1591.9475pt x 1472.50125pt>
+File: ./images/579nm.jpg Graphic file (type jpg)
+<use ./images/579nm.jpg>
+Package pdftex.def Info: ./images/579nm.jpg  used on input line 92.
+(pdftex.def)             Requested size: 150.79968pt x 139.48463pt.
 
-Overfull \hbox (45.00566pt too wide) in paragraph at lines 60--64
-[][] []
- []
-
-[2 <./images/1st.png> <./images/2nd.png> <./images/3rd.png>] (./report.aux)
+[2 <./images/546nm.jpg> <./images/577nm.jpg> <./images/579nm.jpg>]
+<./images/energies.jpg, id=21, 619.31375pt x 355.3275pt>
+File: ./images/energies.jpg Graphic file (type jpg)
+<use ./images/energies.jpg>
+Package pdftex.def Info: ./images/energies.jpg  used on input line 116.
+(pdftex.def)             Requested size: 426.79134pt x 244.87802pt.
+ [3 <./images/energies.jpg>] (./report.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3812 strings out of 492649
- 50599 string characters out of 6129623
- 134431 words of memory out of 5000000
- 7621 multiletter control sequences out of 15000+600000
- 8951 words of font info for 34 fonts, out of 8000000 for 9000
+ 5217 strings out of 492649
+ 75413 string characters out of 6129623
+ 159625 words of memory out of 5000000
+ 8992 multiletter control sequences out of 15000+600000
+ 10221 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,10n,43p,1379b,228s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+ 41i,13n,43p,1108b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pf
-b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
-/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
-sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/
-local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
-ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on report.pdf (2 pages, 3957011 bytes).
+b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><
+/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/lo
+cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on report.pdf (3 pages, 1678646 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 31 compressed objects within 1 object stream
+ 56 PDF objects out of 1000 (max. 8388607)
+ 36 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
